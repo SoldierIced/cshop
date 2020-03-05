@@ -1,0 +1,11 @@
+eror en paginacion talle.aspx
+cambiar color de letra de textbox en productos.aspx(al cargar un producto no se visualizan los textos
+para agregar imagenes trabajar con el control file upload (traer el archivo de imagen)
+Resolver el problema de delay que tiene (puede ser con javascript o lo modal) (variables globales de acceso datos)
+Falta editar en control de usuarios
+falta reportes
+en ventas mostrar las descripciones
+Falta listado de mensajes (de usuario)
+falta  "mi cuenta" modificacion de datos de usuario
+falta el registrar 
+en ventas mostrar las descripciones (usuario)

@@ -1,0 +1,7 @@
+ 1: agregar masivamente todos los talles que tenga un articulo a 1 sucursal
+
+2: agregar masivamente stock a todos los talles x articulo de una sucursal
+
+ evitar que los detalles de los talles se puedan repetir(validandolo)
+
+ agregar masivamente todos los colores a un articullo

@@ -1,0 +1,88 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Administrador.master.cs" Inherits="Cshop1._1.Administrador" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+     <link href="./CSS/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./CSS/master/css" rel="stylesheet">
+    <link href="./CSS/master/blog.css" rel="stylesheet">
+    <link href="./CSS/master/sticky-footer.css" rel="stylesheet">
+   </head>
+<body>
+    <form id="form1" runat="server" class="form-control">
+        <div class="container">
+ <header class="blog-header py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          
+          <div class="col-4 text-center">
+            <a class="blog-header-logo text-dark" href="Principal.aspx">Cshop</a>
+          </div>
+            
+          <div class="col-4 d-flex justify-content-end align-items-center">
+             
+              <asp:LinkButton ID="usernormal" CssClass="btn btn-sm btn-outline-secondary" runat="server" OnClick="usernormal_Click">Vista Usuario</asp:LinkButton>
+             
+           </div>
+        </div>
+      </header>
+
+           
+        </div>
+        
+        
+         <div style="float:left; width:30%">
+                 <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="administrador/Alta_Sucursal.aspx">
+                   Alta y modificacion de sucursales <span class="sr-only"></span>
+                </a>
+              </li>
+             <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Alta de colores
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                   Alta de productos
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                   Alta de talles
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Administrar usuarios
+                </a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Reportes
+                </a>
+              </li>
+            </ul>
+
+          
+          </div>
+        </nav> 
+            
+      
+            </div>
+            <div class="float-lg-right"  ">
+          <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+                </div>
+        
+    </form>
+</body>
+</html>

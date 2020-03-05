@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Usuario.master.cs" Inherits="Cshop1._1.Usuario1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Use Bootstrap’s JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.">
+<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+<meta name="generator" content="Jekyll v3.7.0">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+  
+    <link href="./CSS/bootstrap.css" rel="stylesheet">
+    <link href="./CSS/master/blog.css" rel="stylesheet">
+    <link href="./CSS/master/sticky-footer.css" rel="stylesheet">
+    <link href="./CSS/Estilos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+         input{
+            color:black !important;
+        }
+    </style>
+     
+   </head>
+
+<body class="container ">
+    <form id="form1" runat="server">
+        <div>
+            
+            
+      
+          
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+
+
+
+    <link href="./Js/bootstrap.min.js" rel="script">
+    <link href="./CSS/javascript/analytics.js" rel="script">
+    <link href="./Js/jquery.min.js" rel="script">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

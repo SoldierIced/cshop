@@ -1,0 +1,113 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Cshop1._1.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Use Bootstrap’s JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.">
+<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+<meta name="generator" content="Jekyll v3.7.0">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+  
+    <link href="./CSS/bootstrap.css" rel="stylesheet">
+    <link href="./CSS/master/blog.css" rel="stylesheet">
+    <link href="./CSS/master/sticky-footer.css" rel="stylesheet">
+    <link href="./CSS/Estilos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <style>
+         input{
+            color:black !important;
+        }
+    </style>
+   </head>
+<body class="container ">
+    <form id="form1" runat="server">
+        <header class="blog-header py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          
+          <div class="col-4 text-center">
+          <a class="blog-header-logo text-dark" href="../Principal.aspx">Cshop</a>
+          </div>
+            
+          <div class="col-4 d-flex justify-content-end align-items-center">
+              <asp:LinkButton ID="usernormal" CssClass="btn btn-sm btn-outline-secondary" runat="server" OnClick="usernormal_Click">Vista Usuario</asp:LinkButton>
+           </div>
+        </div>
+      </header>
+        
+                 <nav class="col-md-2 d-none d-md-block bg-light sidebar" style="width:15%; float:left;">
+          
+            <ul class="nav flex-column">
+
+              <%--      <li class="nav-item dropright">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Sucursales
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="Sucursales.aspx">Alta y modificacion de sucursal</a>
+                          <a class="dropdown-item" href="abm_art_x_suc.aspx">Articulos por sucursal</a>
+                        </div>
+                  </li>--%>
+                 <li class="nav-item dropright">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Articulos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item"  href="Colores.aspx">Alta de Colores</a>
+                      <a class="dropdown-item"   href="TiposRopa.aspx">Alta de Categoria de Ropa</a>
+                      <a class="dropdown-item" href="Talle.aspx"> Alta de Talles</a>
+                      <a class="dropdown-item"  href="Productos.aspx">Control de  Articulos</a>
+                         <div class="dropdown-divider">Stock por sucursal</div>
+                      <a class="dropdown-item" href="Articuloxsucursal.aspx">Stock de articulos</a>
+         
+                    </div>
+              </li>
+           
+              <li class="nav-item">
+                <a class="nav-link" href="Usuarios_adm.aspx">
+                  Administrar usuarios
+                </a>
+              </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/Administrador/ListadoFacturasAdm.aspx">
+                  Listado Ventas
+                </a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Reportes.aspx">
+                  Reportes
+                </a>
+              </li>
+                  <li class="nav-item">
+                <a class="nav-link" href="MensajesAdmin.aspx">
+                  Mensajes
+                </a>
+              </li>
+            </ul>
+
+          
+         
+        </nav> 
+            
+      
+          
+           
+        
+        
+        <div style="width:85%; float:left;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <link href="./Js/bootstrap.min.js" rel="script">
+    <link href="./CSS/javascript/analytics.js" rel="script">
+    <link href="./Js/jquery.min.js" rel="script">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
