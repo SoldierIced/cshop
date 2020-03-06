@@ -24,8 +24,6 @@ namespace Cshop1._1
                 }
             }
 
-     
-
         }
 
         protected void Login_Click(object sender, EventArgs e)

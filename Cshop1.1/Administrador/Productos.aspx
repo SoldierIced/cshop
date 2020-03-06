@@ -17,7 +17,11 @@
         %>
   
     
-    
+    <style>
+        input {
+            background-color:white !important;
+        }
+    </style>
     
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Dar de alta nuevo Producto.</button>
     &nbsp;
@@ -67,9 +71,9 @@
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Tipo de Ropa">
                 <EditItemTemplate>
-                    <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="detalle" style=" background-color: #000;" DataValueField="c_tiporopa" Height="16px" OnDataBound="DropDownList1_DataBound" Width="122px" CssClass="cuadrados">
+                    <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource2" DataTextField="detalle" style=" background-color: #000;" DataValueField="c_tiporopa" Height="16px" OnDataBound="DropDownList1_DataBound" Width="122px" CssClass="cuadrados">
                     </asp:DropDownList>
-                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:cshopConnectionString2 %>" SelectCommand="SELECT [c_tiporopa], [detalle] FROM [tipoRopa]"></asp:SqlDataSource>
+                    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:REAL %>" SelectCommand="SELECT * FROM [tipoRopa]"></asp:SqlDataSource>
                 </EditItemTemplate>
                 <ItemTemplate>
                     <asp:Label ID="Label9" runat="server" Text='<%# Bind("detalle") %>'></asp:Label>

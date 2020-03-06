@@ -13,9 +13,10 @@ namespace Cshop1._1.Administrador
 
         
         void cargartabla(string consulta= "select c_articulo,Articulos.c_tiporopa, tipoRopa.detalle, Articulos.DETALLEar, Articulos.precio, Articulos.url from articulos inner join tipoRopa on tipoRopa.c_tiporopa= Articulos.c_tiporopa") {
-            AccesoDatos aq = new AccesoDatos();
 
-            GridView1.DataSource = aq.ObtenerTabla(consulta);
+           DataTable dt = AccesoDatos.ObtenerTabla2("select * from usuarios");
+
+            GridView1.DataSource = AccesoDatos.ObtenerTabla2(consulta);
             GridView1.DataBind();
           
             
@@ -151,7 +152,7 @@ namespace Cshop1._1.Administrador
                 clases.Productos s = new clases.Productos(tipo, detalle, precio, url, codigo);
                 if (s.update() != 1)
                 {
-                    this.Session["error"] = "No se ha actualizado correctamente la sucursal";
+                    this.Session["error"] = "No se ha actualizado correctamente el producto";
                 }
                 else
                 {
@@ -165,7 +166,7 @@ namespace Cshop1._1.Administrador
 
         protected void GridView1_RowEditing(object sender, GridViewEditEventArgs e)
         {
-            GridView1.EditIndex = -1;
+            GridView1.EditIndex = e.NewEditIndex;
             cargartabla();
         }
 

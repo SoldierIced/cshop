@@ -284,8 +284,5 @@ INSERT [articulosxsucursales] ([c_articulo], [c_sucursal], [c_talle], [stock], [
 select * from usuarios
 select * from tipousuarios
 
-
 select estado, tipousuarios.detalle, usuarios.nombre, usuarios.apellido,usuarios.dni, usuarios.email from usuarios inner join tipousuarios on usuarios.tipouser = tipousuarios.tipouser where usuarios.C_usuario = 2
  
-select c_tiporopa, detalle from tiporopa
-select c_articulo, c_tiporopa, detallear,precio,url from Articulos where c_tiporopa= 1 order by c_articulo asc  

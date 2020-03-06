@@ -54,22 +54,16 @@
       </header>
 
       <div class="nav-scroller py-1 mb-2" >
-        <nav class="nav d-flex justify-content-center">
-             
-            <% 
-                AccesoDatos aq = new AccesoDatos();
-                System.Data.DataTable t = aq.ObtenerTabla("select * from tiporopa");
-                int i = 0;
-                for (i = 0; i < t.Rows.Count; i++)
-                {
-            %>
-                    <a class="p-2 text-muted" href="Principal.aspx?key=<% Response.Write(t.Rows[i]["c_tiporopa"].ToString());%>"><% Response.Write(t.Rows[i]["detalle"].ToString());%></a>
-                  <% 
-                      }
-                  %>
-
+       <%-- <nav class="nav d-flex justify-content-between">
+          <a class="p-2 text-muted" href="">Camisas</a>
+          <a class="p-2 text-muted" href="">Pantalones</a>
+          <a class="p-2 text-muted" href="">Remeras</a>
+          <a class="p-2 text-muted" href="">Camperas</a>
+          <a class="p-2 text-muted" href="">Ropa interior</a>
+          <a class="p-2 text-muted" href="">Chalecos</a>
+          <a class="p-2 text-muted" href="">accesorios</a>
           
-        </nav>
+        </nav>--%>
           
       </div>
     

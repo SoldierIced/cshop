@@ -64,7 +64,7 @@ namespace Cshop1._1.clases
         public int update()
         {
 
-            consulta = " update Articulos set  c_tiporopa = '"+c_tipo+"', detallear = '"+detalle+"', precio = '"+precio+"', ulr='"+url+"' where c_articulo = '"+c_articulo+"'";
+            consulta = " update Articulos set  c_tiporopa = '"+c_tipo+"', detallear = '"+detalle+"', precio = '"+precio+"', url='"+url+"' where c_articulo = '"+c_articulo+"'";
             try
             {
                 aq.aplicarconsultasql(consulta);

@@ -32,41 +32,9 @@
                 <div class="productgrid--items">
                             
 <% 
-
+    
     AccesoDatos aq = new AccesoDatos();
-    System.Data.DataTable t  = new System.Data.DataTable();
-    int opcionListado = 0;
-
-    try
-    {
-        if (Request.QueryString["key"].ToString() != "")
-        {
-            string valor = Request.QueryString["key"].ToString();
-            opcionListado = int.Parse(valor);
-        }
-
-    }
-    catch
-    {
-        opcionListado = -1;
-    }
-
-
-
-
-    switch (opcionListado)
-    {
-        case 1:
-            t =  aq.ObtenerTabla("select c_articulo,detallear,precio,url from Articulos where c_tiporopa = 1 order by c_articulo desc  ");
-            break;
-        case 2:
-            t =  aq.ObtenerTabla("select c_articulo,detallear,precio,url from Articulos where c_tiporopa = 2 order by c_articulo desc  ");
-            break;
-        default:
-            t =  aq.ObtenerTabla("select c_articulo,detallear,precio,url from Articulos order by c_articulo desc");
-            break;
-    }
-
+    System.Data.DataTable t =  aq.ObtenerTabla("select c_articulo,detallear,precio,url from Articulos order by c_articulo desc");
     int i = 0;
 
     for ( i = 0;  i <t.Rows.Count; i++)
@@ -78,7 +46,7 @@
             System.Data.DataTable colores= aq.ObtenerTabla("select * from ColoresxArticulos where c_articulo='" + t.Rows[i]["c_articulo"].ToString() + "'");
 
             if (colores.Rows.Count != 0) {
-
+         
     %>
        
             <article class="productgrid--item  imagestyle--cropped-small productitem--sale  productitem--emphasis  gp-featured-collection "

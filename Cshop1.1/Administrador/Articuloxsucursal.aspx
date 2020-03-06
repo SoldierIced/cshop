@@ -28,7 +28,9 @@
     <div class="modal-content" style="text-align:center;">
         <asp:Label ID="Label3"  runat="server" Text="Elija la sucursal que desee para ver los productos."></asp:Label>
         <br/>
-        <asp:DropDownList ID="dd_sucursales" runat="server" Height="16px" Width="396px" DataSourceID="SqlDataSource1" DataTextField="nombre" DataValueField="c_sucursal"></asp:DropDownList>
+        <asp:DropDownList ID="dd_sucursales" runat="server" Height="16px" Width="396px" DataSourceID="SqlDataSource2" DataTextField="nombre" DataValueField="c_sucursal"></asp:DropDownList>
+    
+         <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:REAL %>" SelectCommand="SELECT [c_sucursal], [nombre] FROM [sucursales]"></asp:SqlDataSource>
     
          <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:cshopConnectionString2 %>" SelectCommand="SELECT [c_sucursal], [nombre] FROM [sucursales]"></asp:SqlDataSource>
     
